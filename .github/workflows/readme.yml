@@ -1,0 +1,44 @@
+name: Sincronizar README
+
+on:
+  push:
+    branches: [main]
+    paths: [projects.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme
+  cancel-in-progress: false
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validar projects.json
+        run: python scripts/validar_projects.py
+
+      - name: Gerar tabela do README
+        run: python scripts/gerar_readme.py
+
+      - name: Commitar se mudou
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README já está em sincronia."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: atualizar tabela do README"
+          git push
