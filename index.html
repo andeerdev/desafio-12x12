@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desafio 12x12 · Anderson Ferreira</title>
+  <meta name="description" content="12 projetos em 12 semanas: um lançamento por semana, com código aberto e deploy funcionando. Vitrine do Anderson Ferreira.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0a1416" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5faf9" media="(prefers-color-scheme: light)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Desafio 12x12 · Anderson Ferreira">
+  <meta property="og:description" content="12 projetos em 12 semanas: um lançamento por semana, com código aberto e deploy funcionando.">
+  <meta property="og:url" content="https://andeerdev.github.io/desafio-12x12/">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1416'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='monospace' font-size='30' font-weight='700' fill='%232dd4bf'%3E12%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#projetos">Pular para os projetos</a>
+
+  <header class="topo">
+    <div class="container topo__linha">
+      <a class="marca" href="./" aria-label="Desafio 12x12, início">
+        <span class="marca__num" aria-hidden="true">12</span>
+        <span>Desafio 12x12</span>
+      </a>
+      <a class="topo__link" id="link-github-topo" href="https://github.com/andeerdev" target="_blank" rel="noopener noreferrer" aria-label="Perfil do Anderson no GitHub (abre em nova aba)">
+        <svg class="icone" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="titulo">
+      <p class="selo" id="selo" aria-live="polite">
+        <span class="selo__ponto" aria-hidden="true"></span>
+        <span id="selo-texto">Carregando…</span>
+      </p>
+      <h1 id="titulo">12 projetos.<br><span class="destaque">12 semanas.</span></h1>
+      <p class="hero__texto">
+        Sou o Anderson, estudo Ciência da Computação na UniSantos e estou construindo em público:
+        um projeto novo por semana, com código aberto e deploy no ar. O foco é dados e IA,
+        ferramentas pequenas que resolvem problemas reais e rodam direto no navegador.
+      </p>
+      <p class="hero__parceiro">
+        <a id="link-parceiro" href="https://jakemerson.github.io/desafio-12x12/" target="_blank" rel="noopener noreferrer">Desafio em dupla com <span id="nome-parceiro">Emerson Menezes</span> <span aria-hidden="true">→</span></a>
+      </p>
+    </section>
+
+    <section class="container" aria-label="Números do desafio">
+      <dl class="stats">
+        <div class="stat"><dt>Semanas totais</dt><dd id="stat-semanas">–</dd></div>
+        <div class="stat"><dt>Lançados</dt><dd id="stat-lancados">–</dd></div>
+        <div class="stat"><dt>Progresso</dt><dd id="stat-progresso">–</dd></div>
+        <div class="stat"><dt>Licença</dt><dd id="stat-licenca">–</dd></div>
+      </dl>
+    </section>
+
+    <section class="container progresso" aria-labelledby="titulo-progresso">
+      <div class="progresso__cabeca">
+        <h2 id="titulo-progresso" class="rotulo">Linha do tempo</h2>
+        <p class="progresso__legenda" id="progresso-legenda"></p>
+      </div>
+      <div id="barra-progresso" role="progressbar" aria-labelledby="titulo-progresso" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0">
+        <ol class="trilha" id="trilha"></ol>
+      </div>
+    </section>
+
+    <section class="container" id="projetos" aria-labelledby="titulo-projetos" tabindex="-1">
+      <h2 id="titulo-projetos" class="secao__titulo">Projetos</h2>
+      <div class="grade" id="grade" aria-live="polite">
+        <noscript>
+          <p class="aviso">
+            Esta vitrine precisa de JavaScript para listar os projetos.
+            Veja a tabela completa no
+            <a href="https://github.com/andeerdev/desafio-12x12#readme">README do repositório</a>.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="container" aria-labelledby="titulo-principios">
+      <h2 id="titulo-principios" class="secao__titulo">Princípios</h2>
+      <div class="principios">
+        <article class="principio">
+          <span class="principio__num" aria-hidden="true">01</span>
+          <h3>Lançar toda semana</h3>
+          <p>Pronto e no ar vale mais que perfeito na gaveta. Escopo pequeno, entrega real e melhoria contínua.</p>
+        </article>
+        <article class="principio">
+          <span class="principio__num" aria-hidden="true">02</span>
+          <h3>Dados ficam com você</h3>
+          <p>Local-first: sempre que possível, tudo roda no navegador. Sem cadastro, sem rastreamento, sem servidor guardando o que é seu.</p>
+        </article>
+        <article class="principio">
+          <span class="principio__num" aria-hidden="true">03</span>
+          <h3>Código aberto</h3>
+          <p>Cada projeto tem repositório público e licença livre. Dá para ler, estudar, copiar e melhorar.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__linha">
+      <p>© 2026 <span id="autor-nome">Anderson Ferreira</span></p>
+      <nav aria-label="Redes do autor">
+        <ul class="rodape__links" id="rodape-links">
+          <li><a href="https://github.com/andeerdev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
