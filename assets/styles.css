@@ -223,9 +223,6 @@ main { padding-top: var(--topo-altura); }
   color: var(--texto-2);
 }
 
-.hero__parceiro { margin-top: 20px; font-weight: 500; }
-.hero__parceiro a { text-decoration: none; }
-.hero__parceiro a:hover { text-decoration: underline; }
 
 /* ---------- Estatísticas ---------- */
 

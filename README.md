@@ -10,9 +10,8 @@
 
 ## O desafio
 
-Sou o Anderson, estudante de Ciência da Computação na UniSantos, e topei um desafio em dupla com o
-[Emerson Menezes](https://jakemerson.github.io/desafio-12x12/): lançar **um projeto por semana durante 12 semanas**,
-construindo em público. O foco é dados e IA.
+Um compromisso público com a entrega: lançar **um projeto por semana durante 12 semanas**,
+cada um no ar, com código aberto e foco em resolver problemas reais.
 
 As regras são simples:
 
@@ -75,10 +74,6 @@ Scripts úteis (Python 3.11+, só biblioteca padrão):
 python scripts/validar_projects.py   # confere o projects.json
 python scripts/gerar_readme.py       # regenera a tabela acima
 ```
-
-## Parceria
-
-Desafio em dupla com o Emerson Menezes. Veja a vitrine dele: https://jakemerson.github.io/desafio-12x12/
 
 ## Licença
 

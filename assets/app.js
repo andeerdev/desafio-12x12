@@ -131,14 +131,6 @@
     $("stat-progresso").textContent = `${fmtPct.format(c.progresso)}%`;
     $("stat-licenca").textContent = dados.desafio.licenca;
 
-    const parceiro = dados.desafio.parceiro;
-    if (parceiro && urlSegura(parceiro.url)) {
-      $("link-parceiro").href = parceiro.url;
-      $("nome-parceiro").textContent = parceiro.nome;
-    } else {
-      $("link-parceiro").closest("p").hidden = true;
-    }
-
     const gh = `https://github.com/${encodeURIComponent(dados.autor.github)}`;
     $("link-github-topo").href = gh;
   }

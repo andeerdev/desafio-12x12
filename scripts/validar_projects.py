@@ -65,15 +65,6 @@ def validar_desafio(dados: dict, erros: list[str]) -> int | None:
     if isinstance(total, bool) or not isinstance(total, int) or total < 1:
         erros.append("desafio.total_semanas: inteiro maior que zero.")
         total = None
-
-    parceiro = desafio.get("parceiro")
-    if parceiro is not None:
-        if not isinstance(parceiro, dict):
-            erros.append("desafio.parceiro: deve ser um objeto com nome e url.")
-        else:
-            texto_obrigatorio(parceiro, "nome", "desafio.parceiro", erros)
-            if not eh_url_https(parceiro.get("url")):
-                erros.append("desafio.parceiro.url: URL https:// obrigatória.")
     return total
 
 

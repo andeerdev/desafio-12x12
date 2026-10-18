@@ -8,8 +8,7 @@
     "titulo": "Desafio 12x12",
     "inicio": "2026-10-19",
     "total_semanas": 12,
-    "licenca": "MIT",
-    "parceiro": { "nome": "Emerson Menezes", "url": "https://jakemerson.github.io/desafio-12x12/" }
+    "licenca": "MIT"
   },
   "projetos": [
     {
