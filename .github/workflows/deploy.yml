@@ -33,6 +33,8 @@ jobs:
         run: |
           mkdir -p _site
           cp -r index.html assets projects.json _site/
+          # Versiona CSS/JS pelo commit para o navegador não misturar HTML novo com asset antigo em cache.
+          sed -i "s/?v=dev/?v=${GITHUB_SHA::7}/g" _site/index.html
 
       - name: Configurar Pages
         uses: actions/configure-pages@v6

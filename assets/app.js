@@ -259,7 +259,7 @@
       })
     );
     $("grade").replaceChildren(aviso);
-    console.error("[12x12] Falha ao carregar projects.json:", detalhe);
+    console.error("[12x12] Falha ao carregar ou renderizar a vitrine:", detalhe);
   }
 
   async function iniciar() {
