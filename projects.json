@@ -1,0 +1,27 @@
+{
+  "autor": {
+    "nome": "Anderson Ferreira",
+    "github": "andeerdev",
+    "linkedin": ""
+  },
+  "desafio": {
+    "titulo": "Desafio 12x12",
+    "inicio": "2026-10-19",
+    "total_semanas": 12,
+    "licenca": "MIT",
+    "parceiro": { "nome": "Emerson Menezes", "url": "https://jakemerson.github.io/desafio-12x12/" }
+  },
+  "projetos": [
+    {
+      "semana": 1,
+      "nome": "Quanto Preciso Tirar",
+      "subtitulo": "Calculadora de média e frequência para universitários",
+      "descricao": "Informe as notas e os pesos das avaliações e descubra quanto falta para passar e quantas faltas ainda cabem. Roda 100% no navegador.",
+      "stack": ["React", "TypeScript", "Vite"],
+      "status": "em_andamento",
+      "lancamento": null,
+      "demo": null,
+      "repo": null
+    }
+  ]
+}
