@@ -24,7 +24,7 @@ As regras são simples:
 <!-- PROJETOS:INICIO -->
 | Sem | Projeto | Descrição | Stack | Lançamento | Status | Links |
 |:---:|---|---|---|:---:|---|---|
-| 01 | **Quanto Preciso Tirar** | Calculadora de média e frequência para universitários | React, TypeScript, Vite | — | 🚧 Em andamento | — |
+| 01 | **Conversor de Imagens** | PNG, JPG e WebP no navegador, sem enviar nada | HTML, JavaScript, Canvas API | — | 🚧 Em andamento | [Código](https://github.com/andeerdev/conversor-imagens) |
 | 02 | *A definir* | — | — | — | — | — |
 | 03 | *A definir* | — | — | — | — | — |
 | 04 | *A definir* | — | — | — | — | — |
