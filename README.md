@@ -2,8 +2,7 @@
 
 > 12 projetos em 12 semanas. Um lançamento por semana, com código aberto e deploy no ar.
 
-[![Vitrine online](https://img.shields.io/badge/Vitrine-online-2dd4bf)](https://andeerdev.github.io/desafio-12x12/)
-<!-- BADGE:INICIO -->![Progresso](https://img.shields.io/badge/Progresso-1%20de%2012-2dd4bf)<!-- BADGE:FIM -->
+[![Vitrine online](https://img.shields.io/badge/Vitrine-online-2dd4bf)](https://andeerdev.github.io/desafio-12x12/) <!-- BADGE:INICIO -->![Progresso](https://img.shields.io/badge/Progresso-1%20de%2012-2dd4bf)<!-- BADGE:FIM -->
 [![Licença MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-f59e0b)](./LICENSE)
 
 **Vitrine:** https://andeerdev.github.io/desafio-12x12/

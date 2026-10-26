@@ -3,6 +3,8 @@
 Reescreve apenas o conteúdo entre os marcadores:
   <!-- PROJETOS:INICIO --> ... <!-- PROJETOS:FIM -->
   <!-- BADGE:INICIO --> ... <!-- BADGE:FIM -->
+O marcador BADGE não pode começar a linha: no GitHub, uma linha que começa com
+"<!--" vira HTML puro e o badge aparece como texto em vez de imagem.
 Idempotente: rodar duas vezes seguidas não altera o arquivo.
 
 Uso: python scripts/gerar_readme.py
