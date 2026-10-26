@@ -17,9 +17,9 @@
       "subtitulo": "PNG, JPG e WebP no navegador, sem enviar nada",
       "descricao": "Arraste várias imagens, escolha o formato e a qualidade e baixe tudo convertido. O processamento acontece no seu navegador.",
       "stack": ["HTML", "JavaScript", "Canvas API"],
-      "status": "em_andamento",
-      "lancamento": null,
-      "demo": null,
+      "status": "lancado",
+      "lancamento": "2026-10-26",
+      "demo": "https://andeerdev.github.io/conversor-imagens/",
       "repo": "https://github.com/andeerdev/conversor-imagens"
     }
   ]
